@@ -1,0 +1,11 @@
+rules:
+  - id: sample
+    pattern: System.out.println($MSG)
+    fix: logger.info($MSG)
+    metadata:
+      hello: world
+      references: https://github.com/orta-contrib
+    message: |-
+      Do not use sysout. Use logger.
+    languages: [java]
+    severity: WARNING

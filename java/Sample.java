@@ -4,12 +4,12 @@ class Sample {
         if (i == i) {
             return;
         }
-        logger.info("Hello" + ", " + "world!");
-        logger.info("Hello" + ", " + "world!");
+        System.out.println("Hello" + ", " + "world!");
+        System.out.println("Hello" + ", " + "world!");
     }
 
     private void call() {
-        logger.info("Hello" + ", " + "world!");
-        Arrays.asList("a").forEach(s -> logger.info(s));
+        System.out.println("Hello" + ", " + "world!");
+        Arrays.asList("a").forEach(s -> System.out.println(s));
     }
 }
